@@ -5,7 +5,7 @@
 
 using namespace std;
 
-// InvNapLog(x) = 10^7 * (1 - (10^(-7))^L
+// InvNapLog(x) = 10^7 * e^(-x / (10^7))
 
 double convertDegreesToRadians(int degree);
 double findInvNapLog(double x);
@@ -18,7 +18,7 @@ int main(void)
         double numberInRadians = convertDegreesToRadians(i);
 
         cout << i << " degree(s) = " << numberInRadians << " radians" << endl;
-        cout << "Inverse of NapLog(" << numberInRadians << ") = " << findInvNapLog(numberInRadians) << "\n" << endl;
+        cout << "InvNapLog(" << numberInRadians << ") = " << findInvNapLog(numberInRadians) << "\n" << endl;
     }
 
     return 0;
@@ -31,5 +31,5 @@ double convertDegreesToRadians(int degree)
 
 double findInvNapLog(double x)
 {
-    return pow(10, 7) * pow(1 - pow(10, -7), x);
+    return pow(10, 7) * exp(-x / pow(10, 7));
 }

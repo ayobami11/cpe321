@@ -39,7 +39,7 @@ float median(vector<int> numbers)
     // assuming the numbers provided are already sorted
     int middleIndex = floor(numbers.size() / 2);
 
-    if (middleIndex % 2 == 1)
+    if (numbers.size() % 2 == 1)
     {
         return numbers[middleIndex];
     }

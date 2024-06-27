@@ -19,6 +19,8 @@ int main(void) {
         cout << "NapLog(" << numberInRadians << ") = " << findNapLog(numberInRadians) << "\n" << endl;
     }
 
+    system("pause");
+
     return 0;
 }
 

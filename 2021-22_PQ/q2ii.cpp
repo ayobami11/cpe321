@@ -21,6 +21,8 @@ int main(void)
         cout << "InvNapLog(" << numberInRadians << ") = " << findInvNapLog(numberInRadians) << "\n" << endl;
     }
 
+    system("pause");
+
     return 0;
 }
 

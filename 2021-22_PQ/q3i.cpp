@@ -18,6 +18,8 @@ int main(void)
         cout << "e^(" << numberInRadians << ") = " << exp(numberInRadians) << "\n" << endl;
     }
 
+    system("pause");
+
     return 0;
 }
 

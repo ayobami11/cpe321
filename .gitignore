@@ -3,3 +3,6 @@
 *.exe
 
 prep.cpp
+
+/ignore
+
